@@ -1,4 +1,4 @@
-from lempel_string_iterator import LempelStringIterator
+from .lempel_string_iterator import LempelStringIterator
 
 
 class Decoder:
