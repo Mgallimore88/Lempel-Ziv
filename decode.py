@@ -1,10 +1,6 @@
-from tokenisable_string import TokenisableString
+from decoder import Decoder
 
 
 def decode(message):
-    tokenisable_string = TokenisableString(message)
-    while tokenisable_string.has_next():
-        token = tokenisable_string.next()
-        print(token)
-
-    return message
+    decoder = Decoder(message)
+    return decoder.decode()

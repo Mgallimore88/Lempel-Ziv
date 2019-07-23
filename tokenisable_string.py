@@ -10,11 +10,12 @@ class TokenisableString:
     def has_next(self):
         return self.index < self.length
 
+    # Returns a tuple (number, character)
     def next(self):
         if re.match("[a-zA-Z]", self.string[self.index]):
             char = self.string[self.index]
             self.index += 1
-            return char
+            return None, char
 
         number = ''
         while self.has_next() and re.match("[0-9]", self.string[self.index]):
@@ -22,8 +23,8 @@ class TokenisableString:
             self.index += 1
 
         if self.has_next():
-            token = number + self.string[self.index]
+            char = self.string[self.index]
             self.index += 1
-            return token
+            return int(number), char
         else:
-            return number
+            return int(number), None
