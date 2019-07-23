@@ -1,7 +1,7 @@
 import re
 
 
-class TokenisableString:
+class LempelStringIterator:
     def __init__(self, string):
         self.string = string
         self.index = 0

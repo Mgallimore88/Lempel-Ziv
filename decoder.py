@@ -1,21 +1,21 @@
-from tokenisable_string import TokenisableString
+from lempel_string_iterator import LempelStringIterator
 
 
 class Decoder:
     def __init__(self, message):
         self.message = message
-        self.tokenisable_string = TokenisableString(self.message)
+        self.string_iterator = LempelStringIterator(self.message)
         self.dictionary = {}
         self.dictionary_index = 1
         self.decoded_message = ''
 
     def decode(self):
-        while self.tokenisable_string.has_next():
-            number, character = self.tokenisable_string.next()
+        while self.string_iterator.has_next():
+            number, character = self.string_iterator.next()
             if number and character:
-                decoded_token = self.dictionary[number] + character
-                self.add_to_dictionary(decoded_token)
-                self.add_to_decoded_message(decoded_token)
+                decoded_message_component = self.dictionary[number] + character
+                self.add_to_dictionary(decoded_message_component)
+                self.add_to_decoded_message(decoded_message_component)
             elif character:
                 self.add_to_dictionary(character)
                 self.add_to_decoded_message(character)
