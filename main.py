@@ -1,5 +1,5 @@
 from encode import encode
-from decode import decode
+from decoding import decode
 
 
 message = "abaabbababaaababa"
