@@ -2,10 +2,12 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.pylamaEnabled": false,
-    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Enabled": false,
     "python.pythonPath": "/home/mike/miniconda3/envs/linting/bin/python",
+    "editor.formatOnSaveTimeout": 1500,
 
     "[python]": {
-        "editor.formatOnPaste": false
-    }
+        "editor.formatOnPaste": true
+    },
+    "python.linting.pep8Enabled": true
 }
