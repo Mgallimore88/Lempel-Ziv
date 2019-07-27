@@ -10,10 +10,11 @@ class Encoder:
         self.dict_number = 0
 
 
-        #  turn message string into an iterable list
+        #  turn message string into an iterable list this too long for black
+
         for letter in message:
             self.iterable_message.append[letter]
-        
+
     def encode(self.iterable_message):
         self.running = True
         # do on receipt of message
