@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 class encoder:
     def __init__(self, input_message):
         self.input message = input_message
@@ -46,3 +47,10 @@ def iterate():
     i = i + 1
 
 
+=======
+from encoder import Encoder
+
+def encode(message):
+    encoder = Encoder(message)
+    return encoder.encode()
+>>>>>>> Stashed changes
