@@ -3,6 +3,7 @@ class Encoder:
         self.input message = input_message
         self.rest_of_string = input_message
         self.iterable_message = []
+        self.current_word = []
         self.dictionary = {}
         self.first_time = True
 
@@ -17,8 +18,8 @@ class Encoder:
         if self.first_time is True:
             # do on receipt of message
             self.index = 0
-            current_word = message[self.index]
-            K = message[self.index + 1]
+            self.current_word.append(self.iterable_message[self.index])
+            K = self.iterable_message[self.index + 1]
             dictionary[index] = str(current_word)]
             self.output_message.append(current_word)
             self.iterable_message.pop(0)
@@ -34,6 +35,7 @@ class Encoder:
                 if self.current_word + K in dictionary:
                     self.current_word.append(K)
                     self.index += 1
+
                     
 
 
@@ -52,7 +54,7 @@ class Encoder:
 
     encode_this_word()
 
-    return message
+    return encoded_message
 
 
 
