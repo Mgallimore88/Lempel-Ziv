@@ -2,8 +2,8 @@ from encode import encode
 from decode import decode
 
 
-message = "abaabbababaaababa!"
+message = "bbaabbababaaababa!"
 encoded_message = encode(message)
-print(encoded_message)
+print(f"Encoded message:{encoded_message}")
 decoded_message = decode(encoded_message)
 print(decoded_message)
