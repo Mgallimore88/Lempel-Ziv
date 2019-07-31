@@ -9,5 +9,6 @@
     "[python]": {
         "editor.formatOnPaste": true
     },
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+    "python.formatting.provider": "black"
 }
