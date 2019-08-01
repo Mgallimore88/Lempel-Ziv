@@ -47,10 +47,10 @@ class Encoder:
                         break
 
                 elif (self.current_word + self.next_letter) not in self.dictionary:
-                    """  new word encountered:
-                         Write current word's dict KEY + next letter to output.
-                         Add current word + next letter to dictionary.
-                         reset current word"""
+                    # Next letter makes a new word.
+                    # Write current word's dict KEY + next letter to output.
+                    # Add current word + next letter to dictionary.
+                    # Reset current word.
                     print("adding next letter makes a new word")
                     dict_KEY = self.dictionary.get(self.current_word)
                     self.encoded_message.append(str(dict_KEY) + self.next_letter)
@@ -66,7 +66,7 @@ class Encoder:
                     self.current_word = self.input_message[self.index]
 
         print(f"Final dictionary {self.dictionary}")
-        return self.encoded_message
+        return ''.join(self.encoded_message)
 
     def check_for_end(self, index_increment=1):
         if self.input_message[self.index + index_increment] == "!":
