@@ -12,7 +12,8 @@ class Decoder:
     def decode(self):
         while self.string_iterator.has_next():
             number, character = self.string_iterator.next()
-            if number and character:
+
+            if number is not None and character:
                 decoded_message_component = self.dictionary[number] + character
                 self.add_to_dictionary(decoded_message_component)
                 self.add_to_decoded_message(decoded_message_component)
