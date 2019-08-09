@@ -62,7 +62,7 @@ class Encoder:
         if self.input_message[self.index + index_increment] == "!":
             self.is_finished = True
 
-        self.print_status()
+        self.print_status() # Debug
 
     def print_status(self):
         if self.debug is True:
