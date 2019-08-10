@@ -1,5 +1,5 @@
 class Encoder:
-    def __init__(self, input_message, EOF_symbol="!"):
+    def __init__(self, input_message, EOF_symbol="\4"):
         self.input_message = input_message
         self.encoded_message = []
         self.dictionary = {}
@@ -8,7 +8,8 @@ class Encoder:
         self.debug = False
         self.is_finished = False
         self.current_word = self.input_message[self.index]
-
+        self.dict_symbol = "\3"
+        self.EOF_symbol = EOF_symbol
     def encode(self):
 
         while True:  # Loop until end of message
@@ -45,7 +46,7 @@ class Encoder:
                 # Adding next letter to current word makes a new word.
                 dict_KEY = self.dictionary.get(self.current_word)
                 # Write current word's dict KEY + next letter to output.
-                self.encoded_message.append('%' + str(dict_KEY) + self.next_letter)
+                self.encoded_message.append(self.dict_symbol + str(dict_KEY) + self.next_letter)
                 # Add current word + next letter to dictionary.
                 self.dictionary[self.current_word + self.next_letter] = self.dict_number
                 self.dict_number += 1
@@ -59,7 +60,7 @@ class Encoder:
         return "".join(self.encoded_message)
 
     def check_for_end(self, index_increment=1):
-        if self.input_message[self.index + index_increment] == "!":
+        if self.input_message[self.index + index_increment] == self.EOF_symbol:
             self.is_finished = True
 
         self.print_status() # Debug
