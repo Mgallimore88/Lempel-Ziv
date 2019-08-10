@@ -1,5 +1,5 @@
 class Encoder:
-    def __init__(self, input_message, EOF_symbol='\7':
+    def __init__(self, input_message, EOF_symbol='\4'):
         self.input_message = input_message
         self.encoded_message = []
         self.dictionary = {}
@@ -8,7 +8,7 @@ class Encoder:
         self.debug = True
         self.is_finished = False
         self.current_word = self.input_message[self.index]
-        self.dict_symbol = '\6'
+        self.dict_symbol = '\3'
         self.EOF_symbol = EOF_symbol
     def encode(self):
 
