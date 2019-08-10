@@ -6,14 +6,14 @@ class LempelStringIterator:
         self.string = string
         self.index = 0
         self.length = len(string)
-        self.dict_symbol = "\3"
+        self.dict_symbol = "\6"
 
     def has_next(self):
         return self.index < self.length
 
     # Returns a tuple (number, character)
     def next(self):
-        if re.match("[^\3\4]", self.string[self.index]):
+        if re.match('[^\6\7]', self.string[self.index]):
             char = self.string[self.index]
             self.index += 1
             return None, char
