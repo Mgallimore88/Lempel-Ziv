@@ -1,14 +1,14 @@
 class Encoder:
-    def __init__(self, input_message, EOF_symbol='\4'):
+    def __init__(self, input_message, EOF_symbol="\4"):
         self.input_message = input_message
         self.encoded_message = []
         self.dictionary = {}
         self.index = 0
         self.dict_number = 0
-        self.debug = True
+        self.debug = False
         self.is_finished = False
         self.current_word = self.input_message[self.index]
-        self.dict_symbol = '\3'
+        self.dict_symbol = "\3"
         self.EOF_symbol = EOF_symbol
     def encode(self):
 
@@ -56,7 +56,8 @@ class Encoder:
                 self.index += 2
                 self.current_word = self.input_message[self.index]
 
-                return "".join(self.encoded_message)
+        print(f"Final dictionary {self.dictionary}")
+        return "".join(self.encoded_message)
 
     def check_for_end(self, index_increment=1):
         if self.input_message[self.index + index_increment] == self.EOF_symbol:
@@ -72,4 +73,3 @@ class Encoder:
             print(f"current dictionary = {self.dictionary}")
             print(f"current word = {self.current_word}")
             print(f"next letter = {self.next_letter}")
-            print(f"Final dictionary {self.dictionary}")
