@@ -1,0 +1,168 @@
+***
+index = 0
+encoded message = []
+current dictionary = {}
+current word = 84
+next letter = 104
+***
+index = 0
+encoded message = [84]
+current dictionary = {84: 0}
+current word = 84
+next letter = 104
+***
+index = 1
+encoded message = [84]
+current dictionary = {84: 0}
+current word = 104
+next letter = 105
+***
+index = 1
+encoded message = [84, 104]
+current dictionary = {84: 0, 104: 1}
+current word = 104
+next letter = 105
+***
+index = 2
+encoded message = [84, 104]
+current dictionary = {84: 0, 104: 1}
+current word = 105
+next letter = 115
+***
+index = 2
+encoded message = [84, 104, 105]
+current dictionary = {84: 0, 104: 1, 105: 2}
+current word = 105
+next letter = 115
+***
+index = 3
+encoded message = [84, 104, 105]
+current dictionary = {84: 0, 104: 1, 105: 2}
+current word = 115
+next letter = 32
+***
+index = 3
+encoded message = [84, 104, 105, 115]
+current dictionary = {84: 0, 104: 1, 105: 2, 115: 3}
+current word = 115
+next letter = 32
+***
+index = 4
+encoded message = [84, 104, 105, 115]
+current dictionary = {84: 0, 104: 1, 105: 2, 115: 3}
+current word = 32
+next letter = 105
+***
+index = 4
+encoded message = [84, 104, 105, 115, 32]
+current dictionary = {84: 0, 104: 1, 105: 2, 115: 3, 32: 4}
+current word = 32
+next letter = 105
+***
+index = 5
+encoded message = [84, 104, 105, 115, 32]
+current dictionary = {84: 0, 104: 1, 105: 2, 115: 3, 32: 4}
+current word = 105
+next letter = 115
+***
+index = 5
+encoded message = [84, 104, 105, 115, 32, 105]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 3, 32: 4}
+current word = 105
+next letter = 115
+***
+index = 6
+encoded message = [84, 104, 105, 115, 32, 105]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 3, 32: 4}
+current word = 115
+next letter = 32
+***
+index = 6
+encoded message = [84, 104, 105, 115, 32, 105, 115]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 4}
+current word = 115
+next letter = 32
+***
+index = 7
+encoded message = [84, 104, 105, 115, 32, 105, 115]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 4}
+current word = 32
+next letter = 116
+***
+index = 7
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7}
+current word = 32
+next letter = 116
+***
+index = 8
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7}
+current word = 116
+next letter = 101
+***
+index = 8
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8}
+current word = 116
+next letter = 101
+***
+index = 9
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8}
+current word = 101
+next letter = 120
+***
+index = 9
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8, 101: 9}
+current word = 101
+next letter = 120
+***
+index = 10
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8, 101: 9}
+current word = 120
+next letter = 116
+***
+index = 10
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8, 101: 9, 120: 10}
+current word = 120
+next letter = 116
+***
+index = 11
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 8, 101: 9, 120: 10}
+current word = 116
+next letter = 10
+***
+index = 11
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120, 116]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 11, 101: 9, 120: 10}
+current word = 116
+next letter = 10
+***
+index = 12
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120, 116]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 11, 101: 9, 120: 10}
+current word = 10
+next letter = 10
+***
+index = 12
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120, 116, 10]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 11, 101: 9, 120: 10, 10: 12}
+current word = 10
+next letter = 10
+***
+index = 13
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120, 116, 10]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 11, 101: 9, 120: 10, 10: 12}
+current word = 10
+next letter = 4
+***
+index = 13
+encoded message = [84, 104, 105, 115, 32, 105, 115, 32, 116, 101, 120, 116, 10, 10]
+current dictionary = {84: 0, 104: 1, 105: 5, 115: 6, 32: 7, 116: 11, 101: 9, 120: 10, 10: 13}
+current word = 10
+next letter = 4

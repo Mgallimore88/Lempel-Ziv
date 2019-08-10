@@ -5,7 +5,7 @@ class Encoder:
         self.dictionary = {}
         self.index = 0
         self.dict_number = 0
-        self.debug = False
+        self.debug = True
         self.is_finished = False
         self.current_word = self.input_message[self.index]
         self.dict_symbol = "\3"
@@ -56,7 +56,6 @@ class Encoder:
                 self.index += 2
                 self.current_word = self.input_message[self.index]
 
-        print(f"Final dictionary {self.dictionary}")
         return "".join(self.encoded_message)
 
     def check_for_end(self, index_increment=1):
