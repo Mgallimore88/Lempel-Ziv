@@ -18,9 +18,11 @@ class LempelStringIterator:
             return None, char
 
         number = ''
-        while self.has_next() and re.match("[0-9]", self.string[self.index]):
-            number += self.string[self.index]
+        if self.has_next() and re.match("%", self.string[self.index]):
             self.index += 1
+            while self.has_next() and re.match("0-9", self.string[self.index]):
+                number += self.string[self.index]
+                self.index += 1
 
         if self.has_next():
             char = self.string[self.index]

@@ -45,7 +45,7 @@ class Encoder:
                 # Adding next letter to current word makes a new word.
                 dict_KEY = self.dictionary.get(self.current_word)
                 # Write current word's dict KEY + next letter to output.
-                self.encoded_message.append(str(dict_KEY) + self.next_letter)
+                self.encoded_message.append('%' + str(dict_KEY) + self.next_letter)
                 # Add current word + next letter to dictionary.
                 self.dictionary[self.current_word + self.next_letter] = self.dict_number
                 self.dict_number += 1
