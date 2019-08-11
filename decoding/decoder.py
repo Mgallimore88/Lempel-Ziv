@@ -7,7 +7,7 @@ class Decoder:
         self.string_iterator = LempelStringIterator(self.message)
         self.dictionary = {}
         self.dictionary_index = 0
-        self.decoded_message = ''
+        self.decoded_message = ""
 
     def decode(self):
         while self.string_iterator.has_next():

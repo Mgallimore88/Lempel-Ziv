@@ -11,7 +11,6 @@ class Encoder:
         self.dict_symbol = "\3"
         self.EOF_symbol = EOF_symbol
         self.buffer_length = buffer_length
-        # print(f"encoder.buffer_length = {self.buffer_length}")
 
     def encode(self):
 
@@ -60,8 +59,7 @@ class Encoder:
         print("".join(self.encoded_message))
         return "".join(self.encoded_message)
 
-
-    def is_finished(self, index_increment=1, offset = 1):
+    def is_finished(self, index_increment=1, offset=1):
         # print(f"finishing index {self.index}")
         return self.index + index_increment + offset >= self.buffer_length
 

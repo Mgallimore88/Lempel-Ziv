@@ -1,7 +1,4 @@
-from encoder import Encoder
-
-
-EOF_symbol = "not used"
+from .encoder import Encoder
 
 
 def encode(message, buffer_length):

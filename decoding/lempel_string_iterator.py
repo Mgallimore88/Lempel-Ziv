@@ -18,7 +18,7 @@ class LempelStringIterator:
             self.index += 1
             return None, char
 
-        number = ''
+        number = ""
         if self.has_next() and re.match(self.dict_symbol, self.string[self.index]):
             self.index += 1
             while self.has_next() and re.match("[0-9]", self.string[self.index]):
