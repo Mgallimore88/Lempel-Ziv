@@ -13,7 +13,7 @@ class LempelStringIterator:
 
     # Returns a tuple (number, character)
     def next(self):
-        if re.match('[^\3\4]', self.string[self.index]):
+        if re.match("[^\3\4]", self.string[self.index]):
             char = self.string[self.index]
             self.index += 1
             return None, char

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/mike/miniconda3/envs/blackboard/bin/python",
+    "python.pythonPath": "/home/mike/miniconda3/envs/pipes/bin/python",
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": true,
     "python.linting.pylamaEnabled": false,

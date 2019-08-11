@@ -3,7 +3,7 @@ from .lempel_string_iterator import LempelStringIterator
 
 class Decoder:
     def __init__(self, message):
-        self.message = message
+        self.message = message.decode()
         self.string_iterator = LempelStringIterator(self.message)
         self.dictionary = {}
         self.dictionary_index = 0

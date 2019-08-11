@@ -1,9 +1,9 @@
 from encoder import Encoder
 
 
-EOF_symbol = "\4"
+EOF_symbol = "not used"
 
 
-def encode(message):
-    encoder = Encoder(message + EOF_symbol.encode('ascii'))
+def encode(message, buffer_length):
+    encoder = Encoder(message, buffer_length)
     return encoder.encode()
