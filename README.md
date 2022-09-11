@@ -1,6 +1,6 @@
 Lempel ziv
 
-This python project is to implement Lempel-Ziv compression algorithm as per this video:
+This python project is to implement Lempel-Ziv compression algorithm as described in this video:
 https://www.youtube.com/watch?v=RV5aUr8sZD0
 
 The encoder algorithm works by iterating along a string of text and building a dictionary of previously unencountered words on the fly. 
